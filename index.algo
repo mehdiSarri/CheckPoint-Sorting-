@@ -1,0 +1,16 @@
+ALGORITHM INSERTION_SORT
+//         [9,2,5,6,4]
+VAR
+    x,i,j : INTEGER
+    arr[] : INTEGER
+BEGIN
+    FOR i FROM 1 TO arr.length -1 STEP 1  DO
+        x = arr[i]
+        FOR j FROM i TO 0 STEP -1  DO
+            IF (arr[j-1]>x) THEN
+                arr[j]=arr[j-1]
+                arr[j-1] = x
+            END_IF
+        END_FOR
+    END_FOR
+END
